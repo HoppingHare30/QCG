@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QCG Club - IIT Roorkee</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="assets/logo.png" alt="QCG Club Logo">
+    </div>
+    <button id="hamburger-btn">&#9776;</button>
+    <div id="hamburger-menu">
+      <a href="index.html">Home</a>
+      <a href="https://qcg.iitr.ac.in/events.html">Events</a>
+      <a href="https://github.com/qcgiitr">GitHub</a>
+      <a href="https://medium.com/@qcgiitr">Blogs</a>
+      <a href="https://drive.google.com/drive/folders/16Y-ZDR-sl8D2ESm8WWOJ4DG7pOxWTE8f">Resources</a>
+      <a href="https://qcg.iitr.ac.in/team.html">Team</a>
+      <a href="https://qcg.iitr.ac.in/hackathon.html">QFF'24</a>
+    </div>
+  </header>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Welcome to <span style="color: #c434b8;">QCG Club</span></h1>
+        <p>Join us in our initiatives and activities!</p>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <div class="about-content">
+        <div class="about-logo">
+          <img src="assets/logo1.png" alt="Logo1">
+        </div>
+        <div class="about-text">
+          <h2>About Us</h2>
+          <p>Quantum Computing Group is a student-run group to inculcate and uplift the culture of quantum computing at IIT Roorkee.</p>
+        </div>
+      </div>
+    </section>
+    <section id="initiatives" class="initiatives">
+      <h2>Our Initiatives</h2>
+      <div class="initiatives-slider">
+        <div class="initiative-item">
+          <i class="fas fa-comments"></i>
+          <h3>Discussions</h3>
+          <p>We conduct regular discussions on various topics of quantum computing, open for all our quantum enthusiasts.</p>
+        </div>
+        <div class="initiative-item">
+          <i class="fas fa-quote-left"></i>
+          <h3>Blogs</h3>
+          <p>Check out the blogs written by our members, exploring different concepts in quantum computing.</p>
+        </div>
+        <div class="initiative-item">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <h3>Workshops</h3>
+          <p>We conduct multiple workshops throughout the year to give the student community a hands-on experience with quantum computing.</p>
+        </div>
+        <div class="initiative-item">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Hackathons</h3>
+          <p>QCG conducts a quantum hackathon every year, giving students a platform to innovate and work on interesting projects.</p>
+        </div>
+        <div class="initiative-item">
+          <i class="fas fa-bullhorn"></i>
+          <h3>QBytes</h3>
+          <p>QBytes are interesting facts and information from around the world to keep you updated with this constantly advancing field.</p>
+        </div>
+        <div class="initiative-item">
+            <i class="fas fa-desktop"></i>
+          <h3>Projects</h3>
+          <p>A diverse range of open projects are released every year, allowing students to expand their knowledge.</p>
+        </div>        
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="contact-container">
+        <div class="contact-details">
+          <h3>Get In Touch</h3>
+          <p>Email: qcg[DOT]acm[AT]iitr.ac.in</p>
+          <p>Address: Room No. 109, Students Activity Centre, IIT Roorkee, India</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/company/qcgiitr/" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+            </a>
+            <a href="https://x.com/qcgiitr" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/qcgiitr/" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/qcgiitr/" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+            </a>
+            <a href="https://medium.com/@qcgiitr" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/2111/2111502.png" alt="Medium">
+            </a>
+          </div>
+        </div>
+        <div class="visitor-info">
+          <h3>Visitors</h3>
+          <p><span id="visitor-count">0</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+     <button id="feedbackBtn">💬 Feedback</button>
+     <div id="feedbackForm">
+         <h2>Give Your Feedback</h2>
+         <p>How was your experience?</p>
+         <div class="emoji-container">
+             <span class="emoji" data-rating="1">😡</span>
+             <span class="emoji" data-rating="2">😞</span>
+             <span class="emoji" data-rating="3">😐</span>
+             <span class="emoji" data-rating="4">😊</span>
+             <span class="emoji" data-rating="5">😍</span>
+         </div>
+         <textarea id="feedbackText" placeholder="Write your feedback here..." style="resize: none;"></textarea>
+         <div style="display: flex; justify-content: space-between;">
+             <button id="submitFeedback">Submit</button>
+             <button id="closeFeedbackForm">Close</button>
+         </div>
+     </div>
+     <div id="successMessage">Thank you for your feedback!</div> 
+    <button id="darkModeBtn"><span id="darkModeIcon">🌙</span></button>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
